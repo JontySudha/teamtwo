@@ -10,9 +10,9 @@ while true; do
     read -p "Enter image name: " image_name
 
     if docker images | grep -wq "$image_name"; then
-        echo "✅ Image '$image_name' is present."
+        echo "Image '$image_name' is present."
         break
     else
-        echo "❌ Image not found. Try again."
+        echo "Image not found. Try again."
     fi
 done
