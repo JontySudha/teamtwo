@@ -7,4 +7,4 @@ docker tag img1 dineshsudha/img1:v2
 docker images
 
 while:
-
+    grep $0 | docker images
